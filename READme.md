@@ -58,14 +58,13 @@ For us to use the API, the first step is to get the authorization code. It provi
 
 To get an authorization code, we follow the following steps:
 
-- Start with getting our application's credentials. To do this, go to your dashboard page. On the left sidebar to the bottom, click on _Instagram Graph API_ and _Basic Display_.
+- Start with getting our application's credentials. To do this, go to your dashboard page. On the left sidebar to the bottom, click on _Settings_ and then _Basic_.
 
 - In the resulting page, scroll down to find the _Instagram App ID_, and _Instagram App Secret_, copy them and paste them appropriately to the `.env` file in the root of the project. Your `.env` file should be similar to:
 
 ### Getting user data
 
 On an Instagram account, we can be able to get the user data of that specific account. The user data here involves the _caption_, _id_, _media count_, _media url_, _permalink_, _thumbnail url_, _timestamp_ and _username_.
-
 
 To implement the above functionality, we will follow the following steps:
 
@@ -77,6 +76,7 @@ To implement the above functionality, we will follow the following steps:
         }
   `;
   ```
+
   - From above, we are setting our response to contain the _caption_, _id_, _media count_, _media url_, _permalink_, _thumbnail url_, _timestamp_ and _username_. since it is what we want to get.
 
 - Add the method of getting profile data to the Query object:
@@ -89,4 +89,3 @@ To implement the above functionality, we will follow the following steps:
   ```
 
 - Add the schema defined above to the exported array:
-
