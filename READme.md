@@ -50,9 +50,17 @@ To follow along in this article, it is helpful to have the following:
 
 ### Creating a Facebook developer account
 
+- To create a Facebook developer account, follow the following steps:
+
+- Visit the [Facebook developer page](https://developers.facebook.com/) and on the right side, click [Login](https://www.facebook.com/login).
+
+- In the resulting page, key in your credentials and click _Log In_.
+
+- After signing in, you will be directed to your [dashboard page](https://developers.facebook.com/apps).
+
 ### Setting up the development server
 
-### Getting an authorization code
+#### Getting an authorization code
 
 For us to use the API, the first step is to get the authorization code. It provides an authentication mechanism to the Instagram API.
 
@@ -62,7 +70,7 @@ To get an authorization code, we follow the following steps:
 
 - In the resulting page, scroll down to find the _Instagram App ID_, and _Instagram App Secret_, copy them and paste them appropriately to the `.env` file in the root of the project. Your `.env` file should be similar to:
 
-### Getting user data
+#### Getting user data
 
 On an Instagram account, we can be able to get the user data of that specific account. The user data here involves the _caption_, _id_, _media count_, _media url_, _permalink_, _thumbnail url_, _timestamp_ and _username_.
 
