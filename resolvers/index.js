@@ -1,12 +1,20 @@
-// //get the defined functions
-// const { getShortLivedAccessToken } = require (".");
+const { getUserData,
+        getBusinessDiscoveryData,
+        getWebhooks,
+        getHashtaggedMediaData,
+        getMediaPublishData,
+        getInsights, } = require ("./instagram");
 
-// //general query object
-// const Query = {
-//     Query: {
-//         getShortLivedAccessToken: () => getShortLivedAccessToken(),
-//         },
-// };
 
-// //exporting the Query object
-// module.exports = Query;
+ const Query = {
+     Query: {
+         getUserData: () => getUserData(),
+         getBusinessDiscoveryData: () => getBusinessDiscoveryData(),
+         getWebhooks: () => getWebhooks(),
+         getHashtaggedMediaData: () => getHashtaggedMediaData(),
+         getMediaPublishData: () => getMediaPublishData(),
+         getInsights: () => getInsights(),
+         },
+ };
+
+module.exports = Query;
