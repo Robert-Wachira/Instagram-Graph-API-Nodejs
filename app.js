@@ -28,8 +28,3 @@ const server = new ApolloServer({ typeDefs, resolvers});
 server.start().then(() => {
     return server.applyMiddleware({ app });
 });
-
-
-
-
-

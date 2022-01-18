@@ -76,7 +76,7 @@ On an Instagram account, we can be able to get the user data of that specific ac
 
 To implement the above functionality, we will follow the following steps:
 
-- Add its schema definition in `app.js`:
+- Add its schema definition in `index.js`:
 
   ```js
   const UserData = gql`
@@ -97,3 +97,20 @@ To implement the above functionality, we will follow the following steps:
   ```
 
 - Add the schema defined above to the exported array:
+  ```js
+  module.exports = [
+    AccessTokenResponse,
+    Query,
+  ];
+  ```
+
+  - After defining the schema, we set up the function for getting the profile data from the API in the `resolvers/Instagram.js` file as follows:
+
+  ```js
+  // getting profile data
+  async function getUserData() {
+
+    return response;
+  }
+  ```
+  From above, we are:
